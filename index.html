@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header__left">
+                
+                <span id="name"> Arthur Cap </span>
+
+
+            </div>
+            <div class="header__mid">
+                <input class = search type="text" required>
+                <ion-icon class = "search__description icon_search" name="search-outline"></ion-icon>
+                <span class = search__description>Type Here</span>
+            </div>
+            <div class="header__right">
+                <a class = head-choose>Experience</a>
+                <span class = head-choose>Contact</span>
+                <span class = head-choose>Information</span>
+            </div>
+        </div>
+
+        <div class="body">
+
+            <div class="body__left-wrap">
+                <button id="menu__button" onclick="open1()" type="button" >
+                    <ion-icon name="list-outline"></ion-icon>
+    
+                </button>
+                <div id="body__left">
+                   
+                    <ul id="list">
+                        <li class="item"><ion-icon class = icon name="home-outline"></ion-icon><span class="icon_des">Home</span></li>
+                        <li class="item"><ion-icon class = icon name="aperture-outline"></ion-icon><span class="icon_des">Explore</span></li>
+                        <li class="item"><ion-icon class = icon name="finger-print-outline"></ion-icon><span class="icon_des">Security</span></li>
+                        <li class="item"><ion-icon class = icon name="planet-outline"></ion-icon><span class="icon_des">Experdition</span></li>
+                        <li class="item"><ion-icon class = icon name="earth-outline"></ion-icon><span class="icon_des">Rule The World</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="body__mid">
+
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+<script>
+    function open1() {
+     
+     var a = document.getElementsByClassName("menu__button")
+     var b= document.getElementById("list")
+     var c= document.getElementById("body__left")
+     const d = document.querySelectorAll('.icon_des')
+     var e = document.querySelectorAll('.item')
+    
+     if((b.style.width =="300px"))
+     {
+
+        b.style.width ="110px";
+        c.style.width ="110px"
+        d.forEach(box => {
+            box.style.display = "none"            
+         });
+         e.forEach(boxx => {
+                boxx.style.width = "38px"
+         });
+        
+     }else 
+     {  
+        b.style.width ="300px";
+         c.style.width ="300px"
+         d.forEach(box => {
+            box.style.display = "contents"            
+         });
+         e.forEach(boxx => {
+                boxx.style.width = "230px"
+         });
+        
+    } 
+ 
+    
+}
+ </script>
+</html>

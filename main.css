@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    font-family: Corbel, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.header{
+
+    margin: 0;
+    padding: 10px;
+    width: 100vw;
+    height: 8vh;
+    color: aliceblue;
+    background-color: rgb(13, 13, 48);
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+}
+#name{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding-left: 90px;
+    font-size: 1.3em;
+}
+.head-choose{
+    font-size: 1em;
+}
+.header__mid{
+    position: relative;
+    width: 35%;
+    height: 30px;
+}
+.search{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.389);
+    color: aliceblue;
+    outline: none;
+}
+.search__description{
+    position: relative;
+    top : -28px;
+    margin-left: 5px;
+}
+.icon_search{
+    position: relative;
+    top: -25px;
+    margin-left: 10px;
+}
+.search:focus ~ .search__description,
+.search:valid ~ .search__description{
+    display: none;
+}
+.header__right{
+    width: 30%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}  
+#list{
+    left : -2000px;
+    list-style: none;
+    padding: 20px;
+    padding-top: 40px;
+    margin : 0;
+}       
+.body{
+    display: flex;
+}     
+.body__left-wrap{
+
+    position: fixed;
+    top : 70px;
+}    
+#body__left{
+    font-size: 1.2em;
+    position: relative;
+    color: aliceblue;
+    width: 110px;
+    height: 95vh;
+    background-color: rgb(7, 9, 42);
+    transition: all 0.5s ease;
+    top : -41px;
+}
+.body__mid{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(254, 254, 254);
+}
+.icon_des{
+    display: none;
+}
+.item {
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    
+}
+.item:hover{
+    background-color: rgba(23, 67, 106, 0.493);
+    border-radius: 7px;
+    width: 38px;
+}
+.icon{
+    margin-right: 18px;
+    position: relative;
+    top : 8px;
+    font-size: 1.5em;
+
+}
+#menu__button{
+    background: none;
+    color: aliceblue;
+    font-size: 2em;
+    position: relative;
+    top : -52px;
+    left: 25px;
+    border: none;
+    outline: none;
+}
+
+/* #menu__button:active + #body__left {
+    width: 300px;
+}
+#menu__button:active + #body__left #list .item .icon_des {
+    display:contents; 
+} */
