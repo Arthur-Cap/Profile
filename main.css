@@ -48,6 +48,7 @@ a{
     background-color: rgba(240, 248, 255, 0.389);
     color: aliceblue;
     outline: none;
+    
 }
 .search__description{
     position: relative;
@@ -95,9 +96,11 @@ a{
     top : -41px;
 }
 .body__mid{
+    margin-top: 80px;
+    margin-left: 150px;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(254, 254, 254);
+    background-color: rgb(255, 255, 255);
 }
 .icon_des{
     display: none;
